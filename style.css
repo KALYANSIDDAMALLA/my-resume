@@ -3,30 +3,40 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* RESUME PAGE */
+/* RESUME */
 .resume {
   width: 800px;
   margin: 40px auto;
   background: white;
   padding: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
 /* HEADER */
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTACT */
+.contact {
+  font-size: 14px;
+  color: #444;
+}
+
+/* HEADINGS */
 h1 {
   margin: 0;
 }
 
-.title {
-  color: gray;
-}
-
-.contact {
-  font-size: 14px;
-  color: #555;
-}
-
-/* SECTIONS */
 h2 {
   border-bottom: 2px solid black;
   padding-bottom: 5px;
