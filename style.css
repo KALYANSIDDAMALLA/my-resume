@@ -1,46 +1,77 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f5f7fa;
-  color: #2c3e50;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
 }
 
 .container {
-  max-width: 900px;
+  display: flex;
+  max-width: 1100px;
   margin: 40px auto;
-  background: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  background: white;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
 }
 
-.header {
+/* SIDEBAR */
+.sidebar {
+  width: 30%;
+  background: #2c3e50;
+  color: white;
+  padding: 30px;
   text-align: center;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
 }
 
-.title {
-  color: #3498db;
-  font-weight: 500;
+.profile {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-h1 {
-  margin-bottom: 5px;
+.role {
+  color: #bdc3c7;
+}
+
+.contact p {
+  font-size: 14px;
+}
+
+.contact a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #34495e;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* MAIN */
+.main {
+  width: 70%;
+  padding: 30px;
 }
 
 h2 {
-  color: #3498db;
-  margin-top: 30px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
 }
 
-.job {
-  margin-bottom: 20px;
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
-.job span {
-  font-size: 14px;
+.card span {
+  font-size: 13px;
   color: gray;
 }
 
@@ -48,23 +79,13 @@ ul {
   padding-left: 20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .sidebar, .main {
+    width: 100%;
   }
 }
