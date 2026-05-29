@@ -1,75 +1,95 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f9;
+  font-family: 'Poppins', sans-serif;
+  background: #eef2f7;
 }
 
+/* CONTAINER */
 .container {
   display: flex;
   max-width: 1100px;
-  margin: 40px auto;
-  background: white;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 30%;
-  background: #2c3e50;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   padding: 30px;
   text-align: center;
 }
 
 .profile {
-  width: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  border: 4px solid white;
   margin-bottom: 15px;
 }
 
 .role {
-  color: #bdc3c7;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 .contact p {
-  font-size: 14px;
+  margin: 10px 0;
 }
 
 .contact a {
-  color: #ecf0f1;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 
+/* SKILLS BADGES */
 .skills {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
   padding: 0;
+  list-style: none;
 }
 
 .skills li {
-  background: #34495e;
-  margin: 5px 0;
-  padding: 8px;
-  border-radius: 5px;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
 }
 
 /* MAIN */
 .main {
   width: 70%;
-  padding: 30px;
+  padding: 40px;
+  background: #fff;
 }
 
 h2 {
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 5px;
+  color: #2a5298;
+  margin-bottom: 10px;
 }
 
+/* CARD DESIGN */
 .card {
-  background: #f9f9f9;
-  padding: 15px;
-  margin-top: 10px;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXT */
 .card span {
   font-size: 13px;
   color: gray;
