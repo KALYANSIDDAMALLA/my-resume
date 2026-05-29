@@ -3,60 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pavan Kalyan | Resume</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
+  <title>Pavan Kalyan | Portfolio</title>
 
-    <header class="header">
-      <h1>Siddamalla Pavan Kalyan</h1>
-      <p class="title">Data Science Postgraduate | ML Enthusiast</p>
-      <p>
-        Hyderabad, India | +91 7780294762 <br>
-        <a href="mailto:Kalyansiddamalla8111@gmail.com">Email</a> |
-        <a href="https://linkedin.com/in/kalyansiddamalla2707">LinkedIn</a> |
-        <a href="https://github.com/KALYANSIDDAMALLA">GitHub</a>
-      </p>
-    </header>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <img src="profile.jpg" alt="Profile Photo" class="profile">
+
+    <h2>Siddamalla Pavan Kalyan</h2>
+    <p class="role">Data Science Postgraduate</p>
+
+    <div class="contact">
+      <p><i class="fas fa-envelope"></i> 
+      <a href="mailto:Kalyansiddamalla8111@gmail.com">Email</a></p>
+
+      <p><i class="fab fa-linkedin"></i> 
+      <a href="https://linkedin.com/in/kalyansiddamalla2707">LinkedIn</a></p>
+
+      <p><i class="fab fa-github"></i> 
+      <a href="https://github.com/KALYANSIDDAMALLA">GitHub</a></p>
+    </div>
+
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Data Analysis</li>
+      <li>SQL</li>
+      <li>TensorFlow</li>
+      <li>Statistics</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
 
     <section>
       <h2>Professional Summary</h2>
       <p>
-        Results-driven Data Science postgraduate with expertise in Machine Learning,
-        Data Analytics, and Predictive Modeling. Experienced in building ML models,
-        dashboards, and data pipelines using Python and modern tools.
+        Data Science postgraduate with strong skills in Machine Learning,
+        Data Analytics, and Predictive Modeling. Experienced in building
+        ML solutions and dashboards using Python.
       </p>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="grid">
-        <div><strong>Languages:</strong> Python, SQL, R, MATLAB</div>
-        <div><strong>ML Tools:</strong> Scikit-learn, TensorFlow, Pandas, NumPy</div>
-        <div><strong>Visualization:</strong> Matplotlib, Seaborn</div>
-        <div><strong>Tools:</strong> MySQL, Excel, SAP, Oracle</div>
-      </div>
     </section>
 
     <section>
       <h2>Experience</h2>
 
-      <div class="job">
+      <div class="card">
         <h3>Machine Learning Intern – ISI Hyderabad</h3>
         <span>May 2025 – Jun 2025</span>
         <ul>
-          <li>Developed churn prediction models with 85% accuracy</li>
-          <li>Performed feature engineering and data analysis</li>
-          <li>Built dashboards using Matplotlib & Seaborn</li>
+          <li>Built churn prediction model with 85% accuracy</li>
+          <li>Performed feature engineering</li>
+          <li>Created dashboards using Matplotlib</li>
         </ul>
       </div>
 
-      <div class="job">
+      <div class="card">
         <h3>Process Associate – Genpact</h3>
         <span>Sep 2023 – Jul 2024</span>
         <ul>
-          <li>Handled financial operations and invoice processing</li>
+          <li>Managed financial operations</li>
           <li>Generated reports using SAP & Oracle</li>
           <li>Improved workflow efficiency</li>
         </ul>
@@ -66,27 +84,26 @@
 
     <section>
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Customer Churn Prediction:</strong> ML model with 85% accuracy</li>
-        <li><strong>Fake News Detection:</strong> NLP model using TF-IDF</li>
-        <li><strong>Epidemic Modeling:</strong> Statistical forecasting model</li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li><strong>Customer Churn Prediction</strong> – 85% accuracy</li>
+          <li><strong>Fake News Detection</strong> – NLP model</li>
+          <li><strong>Epidemic Modeling</strong> – Forecasting system</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>M.Sc Data Science</strong> – GITAM University (2024–2026)</p>
-      <p><strong>B.Sc Mathematics</strong> – ICFAI Foundation (2020–2023)</p>
+      <div class="card">
+        <p><strong>M.Sc Data Science</strong> – GITAM (2024–2026)</p>
+        <p><strong>B.Sc Mathematics</strong> – ICFAI (2020–2023)</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Career Objective</h2>
-      <p>
-        Seeking opportunities as a Data Analyst / ML Engineer to apply analytical
-        and problem-solving skills to real-world challenges.
-      </p>
-    </section>
+  </main>
 
-  </div>
+</div>
+
 </body>
 </html>
